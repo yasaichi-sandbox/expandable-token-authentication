@@ -43,3 +43,12 @@ group :development, :test do
   gem 'spring'
 end
 
+# Flexible authentication solution for Rails with Warden
+gem 'devise'
+
+# OAuth 2 provider for Rails and Grape
+gem 'doorkeeper'
+
+# Rails extension for RESTful Hypermedia API
+gem 'garage', github: 'cookpad/garage'
+gem 'garage-doorkeeper'
