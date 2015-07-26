@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  namespace :settings do
+    resources :tokens, except: %i(show)
+  end
+
   devise_for :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

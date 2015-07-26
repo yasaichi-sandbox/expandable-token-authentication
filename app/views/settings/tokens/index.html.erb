@@ -1,0 +1,23 @@
+<h1>Personal access tokens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @access_tokens.each do |access_token| %>
+      <tr>
+        <td><%= access_token.note %> — <%= access_token.scopes %></td>
+        <td><%= link_to 'Edit', edit_settings_token_path(access_token) %></td>
+        <td><%= link_to 'Delete', settings_token_path(access_token), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Token', new_settings_token_path %>
