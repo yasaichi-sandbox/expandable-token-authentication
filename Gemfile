@@ -54,3 +54,5 @@ gem 'doorkeeper'
 # Rails extension for RESTful Hypermedia API
 gem 'garage', github: 'cookpad/garage'
 gem 'garage-doorkeeper'
+
+gem 'rails_12factor', group: :production
